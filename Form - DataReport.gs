@@ -18,7 +18,7 @@ function dataReport()
   var today = dayName + " - " + dd + "." + mm + "." + yyyy;
 
   // SET TARGET DOCUMENT
-  var targetDoc = SpreadsheetApp.openById('1QvseN9zZlBEtr6aplaAoq_etoPjHj0NEjSrPwCs8g7I'); 
+  var targetDoc = SpreadsheetApp.openById('SHEET_ID'); 
   var targetSheet = targetDoc.getSheetByName("week number " + weekNumber); // Target sheet
   
   // USER AND TIME FOR REPORT
