@@ -1,7 +1,7 @@
 function newDay() 
 {
   var thisSpreadsheet = SpreadsheetApp.getActiveSpreadsheet();
-  var sourceTemplate = SpreadsheetApp.openById('184uNOl-hOqQOgl0s3Acqw1prJWyb1z-d1J-aIMI2MKA');
+  var sourceTemplate = SpreadsheetApp.openById('SHEET_ID');
   var sheetTemplate = sourceTemplate.getSheetByName('TemplateReasonIT');
 
   // SETTING THE WEEK NUMBER
@@ -23,7 +23,7 @@ function newDay()
 
   // DATA MONITOR FROM REPORT
   var sheetNew = thisSpreadsheet.getSheetByName("Day_" + day);
-  var data1 = '=IMPORTRANGE("https://docs.google.com/spreadsheets/d/1QvseN9zZlBEtr6aplaAoq_etoPjHj0NEjSrPwCs8g7I/edit#gid=1090831486", "';
+  var data1 = '=IMPORTRANGE("SHEET_LINK", "';
   var data2 = "week number ";
   var data3 = weekNumber;
   var data4 = '!G1:G12")';
