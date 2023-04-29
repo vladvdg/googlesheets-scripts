@@ -2,7 +2,7 @@ function addWeeks() //Function by week Monday
 {
   var source = SpreadsheetApp.getActiveSpreadsheet();
   
-  var sourceTemplate = SpreadsheetApp.openById('184uNOl-hOqQOgl0s3Acqw1prJWyb1z-d1J-aIMI2MKA');
+  var sourceTemplate = SpreadsheetApp.openById('SHEET_ID');
   var sheetTemplate = sourceTemplate.getSheetByName('TemplateReportIT');
 
   //WEEK NUMBER
